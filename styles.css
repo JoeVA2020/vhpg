@@ -83,7 +83,7 @@ body {
 
 /* Footer Section */
 footer {
-    background-color: #f8f8f8; /* Light neutral background */
+    background-color: #d9d9d9; /* Light neutral background */
     padding: 30px 0;
     color: #333;
 }
@@ -111,10 +111,11 @@ footer {
 
 
 .map-box {
-    flex: 1 1 400px;
+    border:1px solid;
     border-radius: 10px;
     overflow: hidden;
-}
+    height: 4 rem;
+} 
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -158,3 +159,116 @@ footer {
   margin-top: 10px;
   margin-bottom: 10px;
 } */
+
+
+
+/* <!-- Boys and Girls PG Details Section --> */
+.pg-details-section {
+    padding: 40px 20px;
+    background-color: #e9ddc9;
+    text-align: center;
+}
+
+.pg-details-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.pg_details_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.details_container h3{
+    text-align: center;
+}
+
+.details_container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    flex: 1 1 300px;
+}
+
+.pg-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #0056b3;
+}
+
+.pg-column ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.pg-column ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Location button */
+/* From Uiverse.io by alexmaracinaru */ 
+.location_cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.location_cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.location_cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.location_cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.location_cta:hover:before {
+  width: 100%;
+  background: #8ecadd;
+}
+
+.location_cta:hover svg {
+  transform: translateX(0);
+}
+
+.location_cta:active {
+  transform: scale(0.95);
+}
